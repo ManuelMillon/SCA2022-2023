@@ -1,0 +1,7 @@
+{
+  "name": "SCA2022-2023",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
