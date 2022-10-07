@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+  {
+    path: 'houses',
+    loadChildren: () => import('./pages/houses/houses.module').then( m => m.HousesPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'guest-form',
+    loadChildren: () => import('./pages/guest-form/guest-form.module').then( m => m.GuestFormPageModule)
+  },
 ];
 
 @NgModule({
